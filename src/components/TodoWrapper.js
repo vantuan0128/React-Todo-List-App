@@ -89,7 +89,7 @@ export const TodoWrapper = () => {
       <h1>To do List !</h1>
       <TodoForm addTodo={addTodo} />
       {/* display todos */}
-      /*
+      {/*
       The todos array is mapped over using the Array.prototype.map() method to create an array of
       components for each todo item. For each todo item, if its isEditing property is true,
       an EditTodoForm component is rendered. This component takes in two props: editTodo,
@@ -98,7 +98,7 @@ export const TodoWrapper = () => {
       key, which is set to the value of the todo item’s id property; task, which is the todo item itself;
       deleteTodo, which is a function used to delete the todo item; editTodo, which is a function used to toggle the editing status of the todo item;
       and toggleComplete, which is a function used to toggle the completion status of the todo item.
-      */
+      */}
       {todos.map((todo) =>
         todo.isEditing ? (
           <EditTodoForm editTodo={editTask} task={todo} />
